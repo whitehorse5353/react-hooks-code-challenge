@@ -7,6 +7,7 @@ import BasketItems from './components/BasketItems';
 import CurrencyWrapper from './components/CurrencyWrapper';
 import CheckoutBasket from './components/CheckoutBasket';
 import CheckoutBasketWrapper from './components/CheckoutBasketWrapper';
+import CheckOutTotal from "./components/CheckOutTotal";
 
 const AppWrapper = styled.div`
 width: 100%;
@@ -40,6 +41,7 @@ function App() {
                         <Route exact path="/basket/">
                             <CheckoutBasketWrapper/>
                             <CheckoutBasket/>
+                            <CheckOutTotal />
                         </Route>
                     </Switch>
                 </Store>
